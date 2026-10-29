@@ -1,0 +1,21 @@
+print("------------------------------------------------")
+print("----------------FORMULA DE BHASKARA-------------")
+print("------------------------------------------------")
+print("")
+print("Digite os valores a seguir: ")
+A = float(input("Digite o valor de A: "))
+B = float(input("Digite o valor de B: "))
+C = float(input("Digite o valor de C: "))
+print("")
+Delta = (B ** 2) - (4 * A * C)
+print(f"O valor de delta equivale: {Delta}")
+if Delta > 0:
+  print("Sua equação  terá duas raízes reais e distintas.")
+elif Delta == 0:
+  print("Sua equação apresentará uma raiz real.")
+else:
+  print("Sua equação não possui raízes reais.")
+print("")
+XA = (-B+Delta**0.5)/(2*A)
+XB = (-B-Delta**0.5)/(2*A)
+print(f"O valor de X equivale: {XA} e {XB}")
